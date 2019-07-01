@@ -1,9 +1,8 @@
 const ul = document.querySelector("ul");
 const lis = document.querySelectorAll("li");
 const input = document.querySelector("input");
-const button = document.querySelector("button");
+const button = document.querySelector(".add");
 const form = document.querySelector("form");
-const deleteButton = document.querySelector(".delete");
 
 const taskArray = [];
 
@@ -22,7 +21,6 @@ const addTask = e => {
 const removeTask = e => {
   const index = e.target.parentNode.dataset.key;
   taskArray.splice(index, 1);
-  console.log("123");
   refreshArray();
 };
 
